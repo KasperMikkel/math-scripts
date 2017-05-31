@@ -2,7 +2,7 @@ git add .
 
 echo 'Enter the commit message: '
 read commitMessage
-if [ -n "$commitMassage" ]; then
+if [ -ne "$commitMassage" ]; then
     echo "not empty"
     git commit -m "$commitMessage"
 else
@@ -13,7 +13,7 @@ fi
 echo 'Enter the name of the branch: '
 read branch
 
-if [ -n "$var" ]; then
+if [ -ne "$var" ]; then
     echo "not empty"
     git push origin $branch
 else
