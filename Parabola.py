@@ -45,16 +45,15 @@ print("At x = 5.0, y = {0}".format(TTx))
 if sys.argv[4] == '-p':
 	f_a=[]
 	f_b=[]
-	for x in range(-13,13,1):
+	for x in range(-4,8,1):
 		y = (a*x**2 + b*x + c)
 		f_a.append(x)
 		f_b.append(y)
-	
+
 	fig= plt.figure()
 	axes=fig.add_subplot(111)
 	axes.plot(f_a,f_b)
 	plt.grid()
 	plt.show()
 #except:
-#	print (error)
 #	exit()
