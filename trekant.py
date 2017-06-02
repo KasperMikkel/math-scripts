@@ -17,7 +17,7 @@ C_x = (AB**2-BC**2+AC**2)/(2*AB)
 try:
     C_y = math.sqrt(BC**2-(B_x-C_x)**2)-B_y
 except:
-    print 'Ya idiot this shit is not a fucking triangle'
+    print 'Not a triangle'
     exit()
 print 'C.x = %f' % C_x
 print 'C.Y = %f' % C_y
