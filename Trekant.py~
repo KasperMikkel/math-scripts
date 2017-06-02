@@ -1,15 +1,10 @@
 #!/usr/bin/env python
 
-import math, sys
+import math
 import matplotlib.pyplot as plt
-try:
-    AB = float()
-    BC = float()
-    AC = float()
-except:
-    AB = float(raw_input('Enter AB: '))
-    BC = float(raw_input('Enter BC: '))
-    AC = float(raw_input('Enter AC: '))
+AB = float(raw_input('Enter AB: '))
+BC = float(raw_input('Enter BC: '))
+AC = float(raw_input('Enter AC: '))
 #A_x = float(raw_input('Enter A.x: '))
 #A_y = float(raw_input('Enter A.y: '))
 #B_x = float(raw_input('Enter B.x: '))
