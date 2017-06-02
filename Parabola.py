@@ -8,7 +8,7 @@ try:
     if sys.argv[4] == '-p':
         import matplotlib.pyplot as plt
 except:
-	print(' ')
+    pass
 
 try:
 	a = float(sys.argv[1])
