@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import math
 import matplotlib.pyplot as plt
 AB = float(raw_input('Enter AB: '))

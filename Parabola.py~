@@ -49,7 +49,7 @@ try:
 	if sys.argv[4] == '-p':
 		f_a=[]
 		f_b=[]
-		for x in range(-7,7,1):
+		for x in range(-4,8,1):
 			y = (a*x**2 + b*x + c)
 			f_a.append(x)
 			f_b.append(y)
