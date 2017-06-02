@@ -16,4 +16,3 @@ except:
 d = sqrt((A_x - B_x)**2 + (A_y - B_y)**2)
 
 print("The distance is {0}".format(d))
-
