@@ -19,8 +19,12 @@ C_x = (AB**2-BC**2+AC**2)/(2*AB)
 try:
     C_y = math.sqrt(BC**2-(B_x-C_x)**2)-B_y
 except:
-    print 'Ya idiot this shit is not a fucking triangle'
+    print 'Not a triangle'
     exit()
+print 'A.x = %f' % A_x
+print 'A.y = %f' % A_y
+print 'B.x = %f' % B_x
+print 'B.y = %f' % B_y
 print 'C.x = %f' % C_x
 print 'C.Y = %f' % C_y
 plt.plot([A_x,B_x,C_x,A_x], [A_y,B_y,C_y,A_y])
