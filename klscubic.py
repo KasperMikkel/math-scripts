@@ -49,7 +49,7 @@ else :
         print("Error line 48")
 
     j = Decimal(**(1./3))
-    k = math.acos(-((1/(2*g))/2*(1/(2*i)))
+    k = math.acos(-((1/(2*g))/2*(1/(2*i))))
     print("i = {0}".format(i))
     print("j = {0}".format(j))
     print("k = {0}".format(k))
