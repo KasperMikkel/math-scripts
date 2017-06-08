@@ -44,12 +44,12 @@ print("(Tx,Ty) = ({0},{1})".format(Tx,Ty))
 
 TTx = a*5**2 + b*5 + c
 
-print("At x = 5.0, y = {0}".format(TTx))
+print("At x = 5.0 | y = {0}".format(TTx))
 try:
 	if sys.argv[4] == '-p':
 		f_a=[]
 		f_b=[]
-		for x in range(-7,8,1):
+		for x in range(int(Tx-4),int(Tx+5),1):
 			y = (a*x**2 + b*x + c)
 			f_a.append(x)
 			f_b.append(y)
