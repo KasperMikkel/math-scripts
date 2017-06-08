@@ -24,7 +24,7 @@ except:
 	b = float(raw_input("b = "))
 	c = float(raw_input("c = "))
 	d = float(raw_input("d = "))
-getcontext().prec = 10
+getcontext().prec = 100
 f = Decimal(((3*c/a)-(b**2/a**2))/3)
 g = Decimal(((2*b**3/a**3)-(9*b*c/a**2)+(27*d/a))/27)
 h = Decimal((g**2/4)+(f**3/27))
