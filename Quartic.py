@@ -40,4 +40,9 @@ print("d = {0}".format(d))
 print("e = {0}".format(e))
 
 f = c-((3*b**2)/8)
+g = d+(b**3/8)-(b*c/2)
+h = e-((3*b**4)/256)+((b**2*c)/16)-(b*d/4)
+
 print("f = {0}".format(f))
+print("g = {0}".format(g))
+print("h = {0}".format(h))
