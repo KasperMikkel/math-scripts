@@ -3,6 +3,7 @@ from __future__ import print_function
 import sys,socket
 import math
 import cmath
+from cubic import *
 from math import sqrt
 
 try: 
@@ -39,10 +40,13 @@ print("c = {0}".format(c))
 print("d = {0}".format(d))
 print("e = {0}".format(e))
 
-f = c-((3*b**2)/8)
-g = d+(b**3/8)-(b*c/2)
-h = e-((3*b**4)/256)+((b**2*c)/16)-(b*d/4)
+f = 1#c-((3*b**2)/8)
+g = 1#d+(b**3/8)-(b*c/2)
+h = 1#e-((3*b**4)/256)+((b**2*c)/16)-(b*d/4)
 
 print("f = {0}".format(f))
 print("g = {0}".format(g))
 print("h = {0}".format(h))
+
+cuber = cubic(1, (f/2), ((f**2 * (-4*h))/16), g**2 / 64)
+print (cuber)
