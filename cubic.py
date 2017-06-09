@@ -12,7 +12,7 @@ except:
     pass
 
 def cubic(a, b, c, d):
-    print = 1
+    prints = 1
     if a == 0:
         try: # Take arguments and print them
             a = float(sys.argv[1])
@@ -29,18 +29,18 @@ def cubic(a, b, c, d):
             c = float(raw_input("c = "))
             d = float(raw_input("d = "))
     else:
-        print = 0
+        prints = 0
     #getcontext().prec = 28
     f = ((3*c/a)-(b**2/a**2))/3
     g = ((2*b**3/a**3)-(9*b*c/a**2)+(27*d/a))/27
     h = (g**2/4)+(f**3/27)
-    if print:
+    if prints:
         print("f = {0}".format(f))
         print("g = {0}".format(g))
         print("h = {0}".format(h))
 
     if h > 0:
-        if print:
+        if prints:
             print("There is only 1 real root.")
         R = -(g/2)+(h)**(float(1)/2)
         S = (R)**(float(1)/3)
@@ -50,7 +50,7 @@ def cubic(a, b, c, d):
         elif T < 0:
             U = -math.pow(abs(T), float(1)/3)
         else:
-            if print:
+            if prints:
                 print("Error only 1 real root.")
         #U = (T)**(float(1)/3)
         q = ((g**2/4)-h)
@@ -59,13 +59,13 @@ def cubic(a, b, c, d):
         elif q < 0:
             i = -math.pow(abs(q), float(1)/2)
         else:
-            if print:
+            if prints:
                 print("Error Only 1 real root")
         X_1 = (S+U)-(b/(3*a))
         X_2_3 = (-(S+U)/2)-(b/(3*a))
         i_X = ((S-U)*(3)**(float(1)/2))/2
         
-        if print:
+        if prints:
             print("R = {0}".format(R))
             print("S = {0}".format(S))
             print("T = {0}".format(T))
@@ -83,15 +83,15 @@ def cubic(a, b, c, d):
             f = (((3*c)/a)-(b**2/a**2))/3
             g = ((((2*b**3)/a**3)-((9*b*c))/a**2)+((27*d)/a))/27
             x = (d/a)**(float(1)/3)*-1
-            if print:
+            if prints:
                 print("All 3 roots are real and equal.")
                 print("f = {0}".format(f))
                 print("g = {0}".format(g))
                 print("X1 = X2 = X3 = {0}".format(x))
             else:
-                return [x]
+                return [x, x, x]
     else :
-        if print:
+        if prints:
             print("All 3 roots are real")
         q = ((g**2/4)-h)
         if q > 0:
@@ -99,7 +99,7 @@ def cubic(a, b, c, d):
         elif q < 0:
             i = -math.pow(abs(q), float(1)/2)
         else:
-            if print:
+            if prints:
                 print("Error All 3 roots")
 
         j = math.pow(i, float(1)/3)
@@ -112,7 +112,7 @@ def cubic(a, b, c, d):
         X_1 = (2*j)*math.cos(K/3)-(b/(3*a))
         X_2 = L*(M+N)+P
         X_3 = L*(M-N)+P
-        if print:
+        if prints:
             print("i = {0}".format(i))
             print("j = {0}".format(j))
             print("K = {0}".format(K))
