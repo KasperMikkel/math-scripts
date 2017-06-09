@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{6ddeab5f-a21a-4b2d-bcd7-4dab891b2b30}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>klscubic.py</StartupFile>
+    <StartupFile>Quartic.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -21,7 +21,8 @@
   <ItemGroup>
     <Compile Include="CubicParabola.py" />
     <Compile Include="Distance.py" />
-    <Compile Include="klscubic.py" />
+    <Compile Include="cubic.py" />
+    <Compile Include="Quartic.py" />
     <Compile Include="Parabola.py" />
     <Compile Include="ranner.py" />
     <Compile Include="test.py" />
