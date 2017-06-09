@@ -2,6 +2,8 @@
 
 import math, sys
 import matplotlib.pyplot as plt
+print 'line 5'
+q = float(raw_input('s'))
 try:
     AB = float()
     BC = float()
