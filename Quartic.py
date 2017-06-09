@@ -11,20 +11,33 @@ try:
 except:
     pass
 try: # Take arguments and print them
-    a = float(sys.argv[1])
-    b = float(sys.argv[2])
-    c = float(sys.argv[3])
-    d = float(sys.argv[4])
-    e = float(sys.argv[5])
-    print("a = %d" % a)
-    print("b = %d" % b)
-    print("c = %d" % c)
-    print("d = %d" % d)
-    print("e = %d" % e)
-except:
-    a = float(raw_input("a = "))
-    b = float(raw_input("b = "))
-    c = float(raw_input("c = "))
-    d = float(raw_input("d = "))
-    e = float(raw_input("e = "))
+    a_input = float(sys.argv[1])
+    b_input = float(sys.argv[2])
+    c_input = float(sys.argv[3])
+    d_input = float(sys.argv[4])
+    e_input = float(sys.argv[5])
 
+except:
+    a_input = float(raw_input("a_input = "))
+    b_input = float(raw_input("b_input = "))
+    c_input = float(raw_input("c_input = "))
+    d_input = float(raw_input("d_input = "))
+    e_input = float(raw_input("e_input = "))
+print("a_input = %d" % a_input)
+print("b_input = %d" % b_input)
+print("c_input = %d" % c_input)
+print("d_input = %d" % d_input)
+print("e_input = %d" % e_input)
+a = 1.0
+b = b_input/a_input
+c = c_input/a_input
+d = d_input/a_input
+e = e_input/a_input
+print("a = {0}".format(a))
+print("b = {0}".format(b))
+print("c = {0}".format(c))
+print("d = {0}".format(d))
+print("e = {0}".format(e))
+
+f = c-((3*b**2)/8)
+print("f = {0}".format(f))
