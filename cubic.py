@@ -113,13 +113,13 @@ def cubic(a, b, c, d):
         X_2 = L*(M+N)+P
         X_3 = L*(M-N)+P
         if prints:
-            print("i = {0}".format(i))
-            print("j = {0}".format(j))
-            print("K = {0}".format(K))
-            print("L = {0}".format(L))
-            print("M = {0}".format(M))
-            print("N = {0}".format(N))
-            print("P = {0}".format(P))
+            print("i  = {0}".format(i))
+            print("j  = {0}".format(j))
+            print("K  = {0}".format(K))
+            print("L  = {0}".format(L))
+            print("M  = {0}".format(M))
+            print("N  = {0}".format(N))
+            print("P  = {0}".format(P))
             print("X1 = {0}".format(X_1))
             print("X2 = {0}".format(X_2))
             print("X3 = {0}".format(X_3))
