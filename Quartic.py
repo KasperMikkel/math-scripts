@@ -48,5 +48,5 @@ print("f = {0}".format(f))
 print("g = {0}".format(g))
 print("h = {0}".format(h))
 
-cuber = cubic(1, (f/2), ((f**2 * (-4*h))/16), g**2 / 64)
+cuber = cubic(1,3,-6,-8)#cubic(1, (f/2), ((f**2 * (-4*h))/16), g**2 / 64)
 print (cuber)
