@@ -1,0 +1,17 @@
+Using python trigonomitry
+
+%% = python code
+
+%from math import *%
+
+sin in degrees = %sin(radians(x))%
+inverse sin    = %degrees(asin(x))%
+
+same with:
+%cos()%
+%acos()%
+
+%tan()%
+%atan()%
+
+
