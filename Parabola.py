@@ -38,8 +38,8 @@ elif d == 0:
 else :
 	print("The parabola doesn't intersect with the x-axis")
 
-Tx = -b/2*a
-Ty = -d/4*a
+Tx = -b/(2*a)
+Ty = -d/(4*a)
 print("(Tx,Ty) = ({0},{1})".format(Tx,Ty))
 
 TTx = a*5**2 + b*5 + c
